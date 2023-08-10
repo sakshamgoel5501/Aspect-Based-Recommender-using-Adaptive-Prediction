@@ -1,0 +1,3 @@
+#amazon dataset count of id
+$ awk -F "\"*|\"*" '{print $1}' amazon_dataset.csv |awk -F "\"*,\"*" '{print $2}'|uniq|wc -l
+$ awk -F "\"*|\"*" '{print $1}' amazon_dataset.csv |awk -F "\"*,\"*" '{print $2}
